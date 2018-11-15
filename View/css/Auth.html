@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WYNDRUSH (BETA)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        .header {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 10px 10px;
+        }
+
+        .header a {
+            float: left;
+            color: black;
+            text-indent: 150px;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 3px;
+            border-radius: 4px;
+        }
+
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body id="wrapper" style="background-image:url(https://scarvstorage.blob.core.windows.net/wyndrush/pic2.jpg); padding-top:unset; padding-bottom:unset">
+    
+    <div class="header">
+        <a href="#default" class="logo">GROUP PAY</a>
+    </div>
+    
+    <div class="login-box container">
+        <br/>
+        <h1 style="color:gold;text-align:center">Welcome To Group Pay</h1>
+        <br/>
+
+        <div style="width:1000px;margin:0 auto;background-color:white" class="form">
+            <br /><br />
+            <div class="login-form" style="margin-left:50px;float:left">
+                <h5 style="text-align:center">Login</h5>
+                <br /><br />
+                <table cellpadding="10" cellspacing="10">
+                    <tr>
+                        <td>
+                            <label>Email or Username</label>
+                            <input type="text" class="form-control" placeholder="Email or Username" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Password</label>
+                            <input type="text" class="form-control" placeholder="Password" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="text-align:right">
+                                <button type="submit" data-toggle="collapse" value="Search" class="btn btn-success">Login</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr style="border:none; border-left:1px solid blue; height:48vh; width:1px;float:left;margin-left:90px" />
+
+            <div class="register-form">
+                <h5 style="text-align:center">Register</h5>
+                <br />
+                <table align="center" cellpadding="10" cellspacing="10">
+                    <tr>
+                        <td>
+                            <label>First Name</label>
+                            <input type="text" class="form-control" placeholder="First Name" />
+                        </td>
+                        <td>
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" placeholder="Last Name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Email</label>
+                            <input type="text" class="form-control" placeholder="Email" />
+                        </td>
+                        <td>
+                            <label>Username</label>
+                            <input type="text" class="form-control" placeholder="Username" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Password</label>
+                            <input type="text" class="form-control" placeholder="Password" />
+                        </td>
+                        <td>
+                            <label>Confirm Password</label>
+                            <input type="text" class="form-control" placeholder="Confirm Password" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div style="text-align:right">
+                                <button type="submit" data-toggle="collapse" value="Search" class="btn btn-success">Sign Up</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br/> <br/>
+
+            <h6 style="text-align:center">OR</h6>
+
+            <div class="alt-access" style="width:450px; margin:0 auto;text-align:center">
+                    <button type="submit" data-toggle="collapse" value="Search" class="btn btn-success" style="background-color:#008CBA">Continue As Guest</button>
+            </div>
+            <br />
+        </div>
+
+    </div>
+</body>
+</html>
