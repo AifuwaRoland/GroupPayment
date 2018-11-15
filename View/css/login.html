@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Group Payment </title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+        <div class="login-page"></div>
+    </div>
+    <div class="login-box">
+            
+            <img src="avatar.png" class="avatar">
+            <h1>Welcome To GroupPayment</h1>
+            
+
+<div class="form">
+    <form class="register-form">
+    </form>
+<input type="text" placeholder="user name"/>
+<input type="text" placeholder="password"/>
+
+<button>Login in</button>
+<button>Sign as Guest</button>
+
+
+<p class="message">Not Registered? <a href="#">Sign up</a>
+
+</p>
+<form class="login-form">
+        <input type="text" placeholder="user name"/>
+        <input type="text" placeholder="password"/>
+        <input type="text" placeholder="email"/>
+        <button>Sign Up</button>
+        <p class="message"> Registered? <a href="#">Login</a> OR <a href="#"> Login As Guest</a>
+
+</form>
+</div>
+<script src=' https://code.jquery.com/jquery-3.2.1.min.js'>
+</script>
+<script >
+ $('.message a').click(function(){
+     $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+ });
+</script>
+</body>
+</html> 
