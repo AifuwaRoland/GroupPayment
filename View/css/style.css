@@ -75,11 +75,48 @@ body{
     left: calc(50% - 50px);
 }
 h1{
-    margin: 0;
     padding: 0 0 20px;
     text-align: center;
     font-size: 22px;
     color: azure;
+}
+
+h2 {
+
+    font-size: 20px;
+    color: white;
+}
+.welcome {
+    position: absolute;
+    width: 1140px;
+    top: 30%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.avatar {
+
+}
+.option1 {
+    width: 170px;
+    height: 170px;
+    border-radius: 40%;
+    position: absolute;
+    top: 40%;
+    left: 24%;
+}
+.option2 {
+    width: 170px;
+    height: 170px;
+    border-radius: 40%;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+}
+.option3{
+
 }
 
 
