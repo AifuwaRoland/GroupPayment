@@ -3,7 +3,7 @@
 body {
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/money.jpg);
 
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
     background-position: center;
 }
@@ -23,6 +23,7 @@ body {
     padding: 45px;
     text-align: center;
 }
+
 
     .form input {
         font-family: "Roboto", sans-serif;
@@ -76,6 +77,16 @@ body {
     left: calc(50% - 50px);
 }
 
+.logo {
+	width: 160;
+	height: 175px;
+	border-radius: 50%;
+	position: absolute;
+	margin-top: auto;
+/*	top: 10px;*/
+	left: calc(50% - 50px);
+}
+
 h1 {
     padding: 0 0 20px;
     text-align: center;
@@ -98,49 +109,64 @@ h2 {
     text-align: center;
 }
 
+.MemberEmailsI {
+	left: calc(25%);
+	position: absolute;
+	width: 1000px;
+	height: 60px;
+	top: 60%;
+	text: white;
+}
+
+.MemberEmailsI input{
+	width: 400px;
+	height: 30px;
+	background: linear-gradient(green,brown);
+}
+.MemberEmailsI button{
+	color: white;
+	border-radius: 50%;
+	background-color: green;
+	font-size: 11;
+	font-family:  "Times New Roman";
+}
+.avatar {
+}
+
 .option1 {
-    width: 140px;
-    height: 140px;
+    width: 170px;
+    height: 170px;
     border-radius: 40%;
     position: absolute;
     top: 40%;
     left: 24%;
-    color: white;
-
-   
-    display :inline-block;
-}
-.option1 img:hover{
-    filter: brightness(50%);
-}
-.img-text{
-    font-size: 1.25em;
-    line-height: 1.6;
 }
 
 .option2 {
-    width: 140px;
-    height: 140px;
+    width: 170px;
+    height: 170px;
     border-radius: 40%;
     position: absolute;
     top: 40%;
     left: 55%;
 }
-.option2 img:hover{
-    filter: brightness(50%);
-}
-
 
 .option3 {
-    width: 140px;
-    height: 140px;
-    border-radius: 40%;
-    position: absolute;
-    top: 70%;
-    left: 37%;
-
-}
-.option3 img:hover{
-    filter: brightness(50%);
 }
 
+.NPGmessage{
+	position: absolute;
+    width: 1140px;
+    top: 40%;
+    left: 50%;
+    color: green;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.Btn_sendInvites{
+	left: 20%;
+	position: absolute;
+	height:  20px;
+	top: 90%;
+}
