@@ -3,7 +3,7 @@
 body {
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/money.jpg);
 
-    height: 80vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
 }
@@ -98,28 +98,49 @@ h2 {
     text-align: center;
 }
 
-.avatar {
-}
-
 .option1 {
-    width: 170px;
-    height: 170px;
+    width: 140px;
+    height: 140px;
     border-radius: 40%;
     position: absolute;
     top: 40%;
     left: 24%;
+    color: white;
+
+   
+    display :inline-block;
+}
+.option1 img:hover{
+    filter: brightness(50%);
+}
+.img-text{
+    font-size: 1.25em;
+    line-height: 1.6;
 }
 
 .option2 {
-    width: 170px;
-    height: 170px;
+    width: 140px;
+    height: 140px;
     border-radius: 40%;
     position: absolute;
     top: 40%;
     left: 55%;
 }
-
-.option3 {
+.option2 img:hover{
+    filter: brightness(50%);
 }
 
+
+.option3 {
+    width: 140px;
+    height: 140px;
+    border-radius: 40%;
+    position: absolute;
+    top: 70%;
+    left: 37%;
+
+}
+.option3 img:hover{
+    filter: brightness(50%);
+}
 
