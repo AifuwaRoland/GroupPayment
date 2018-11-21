@@ -131,6 +131,12 @@ h2 {
 	font-family:  "Times New Roman";
 }
 .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    left: calc(50% - 50px);
 }
 
 .option1 {
@@ -141,6 +147,13 @@ h2 {
     top: 40%;
     left: 24%;
 }
+.option1 img:hover{
+    filter: brightness(50%);
+}
+.img-text{
+    font-size: 1.25em;
+    line-height: 1.6;
+}
 
 .option2 {
     width: 170px;
@@ -150,8 +163,20 @@ h2 {
     top: 40%;
     left: 55%;
 }
+.option2 img:hover{
+    filter: brightness(50%);
+}
 
 .option3 {
+    width: 140px;
+    height: 140px;
+    border-radius: 40%;
+    position: absolute;
+    top: 70%;
+    left: 37%;
+}
+.option3 img:hover{
+    filter: brightness(50%);
 }
 
 .NPGmessage{
