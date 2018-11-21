@@ -1,9 +1,5 @@
-﻿
-
-
-body {
+﻿body {
     background-color: rgb(130, 76, 175);
-    
     height: 80vh;
     background-size: cover;
     background-position: center;
@@ -25,49 +21,49 @@ body {
     text-align: center;
 }
 
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 1px;
+    background: #ced0d1;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
 
-    .form input {
-        font-family: "Roboto", sans-serif;
-        outline: 1;
-        background: #ced0d1;
-        width: 100%;
-        border: 0;
-        margin: 0 0 15px;
-        padding: 15px;
-        box-sizing: border-box;
-        font-size: 14px;
-    }
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(12, 95, 12);
+    border: 0;
+    padding: 15px;
+    color: #f7f3f3;
+    font-size: 10px;
+    cursor: pointer;
+}
 
-    .form button {
-        font-family: "Roboto", sans-serif;
-        text-transform: uppercase;
-        outline: 0;
-        background: rgb(12, 95, 12);
-        border: 0;
-        padding: 15px;
-        color: #f7f3f3;
-        font-size: 10px;
-        cursor: pointer;
-    }
+.form button:hover,
+.form button:active {
+    background: rgb(9, 46, 11);
+}
 
-        .form button:hover, .form button:active {
-            background: rgb(9, 46, 11);
-        }
+.form.message {
+    margin: 10px 0 0;
+    color: rgb(219, 132, 18);
+    font-size: 10px;
+}
 
-    .form.message {
-        margin: 10px 0 0;
-        color: rgb(219, 132, 18);
-        font-size: 10px;
-    }
+.form .form.message a {
+    color: #4CAF50;
+    text-decoration: none;
+}
 
-    .form .form.message a {
-        color: #4CAF50;
-        text-decoration: none;
-    }
-
-    .form.register-form {
-        display: none;
-    }
+.form.register-form {
+    display: none;
+}
 
 .avatar {
     width: 100px;
@@ -79,19 +75,20 @@ body {
 }
 
 .logo {
-	width: 160;
-	height: 175px;
-	border-radius: 50%;
-	position: absolute;
-	margin-top: auto;
-/*	top: 10px;*/
-	left: calc(50% - 50px);
+    width: 160px;
+    height: 175px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: auto;
+    /*	top: 10px;*/
+    left: calc(50% - 50px);
 }
 
 h1 {
     padding: 0 0 20px;
     text-align: center;
-    font-size: 22px;
+    top:5%;
+    font-size: 10px;
     color: azure;
 }
 
@@ -106,31 +103,10 @@ h2 {
     top: 30%;
     left: 50%;
     color: rgb(19, 18, 18);
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-.MemberEmailsI {
-	left: calc(25%);
-	position: absolute;
-	width: 1000px;
-	height: 60px;
-	top: 60%;
-	text: white;
-}
-
-.MemberEmailsI input{
-	width: 400px;
-	height: 30px;
-	background: linear-gradient(green,brown);
-}
-.MemberEmailsI button{
-	color: white;
-	border-radius: 50%;
-	background-color: green;
-	font-size: 11;
-	font-family:  "Times New Roman";
-}
 .avatar {
     width: 100px;
     height: 100px;
@@ -148,10 +124,12 @@ h2 {
     top: 40%;
     left: 24%;
 }
-.option1 img:hover{
+
+.option1 img:hover {
     filter: brightness(50%);
 }
-.img-text{
+
+.img-text {
     font-size: 1.25em;
     line-height: 1.6;
 }
@@ -164,7 +142,8 @@ h2 {
     top: 40%;
     left: 55%;
 }
-.option2 img:hover{
+
+.option2 img:hover {
     filter: brightness(50%);
 }
 
@@ -176,49 +155,115 @@ h2 {
     top: 70%;
     left: 37%;
 }
+
 .option4 {
-    width: 20;
-    height: 20;
+    width: 20px;
+    height: 20px;
     border-radius: 40%;
     position: absolute;
     top: 5%;
     left: 100%;
 }
-.option3 img:hover{
+
+.option3 img:hover {
     filter: brightness(50%);
 }
 
-.NPGmessage{
-	position: absolute;
-    width: 1140px;
-    top: 40%;
+.NPGmessage {
+    /*background: rgb(35, 36, 35);*/
+    position: absolute;
+    width: 1000px;
+    height: 1100px;
+    top: 75%;
     left: 50%;
-    color: green;
-    transform: translate(-50%,-50%);
+    color: black;
+    transform: translate(-50%, -30%);
     text-align: center;
+    /*font: italic;*/
+    
 }
 
-.Btn_sendInvites{
-	left: 20%;
-	position: absolute;
-	height:  20px;
-	top: 90%;
+.MemberEmailsI {
+    /*background-color: darkgray;*/
+    left: calc(0%);
+    position: absolute;
+    width: 1000px;
+    height: 60px;
+    top: 30%;
+
 }
-.h2{
-    margin: 10 0 10px;
+
+.MemberEmailsI input {
+    width: 400px;
+    height: 30px;
+    background: linear-gradient(white, white);
+    color: white;
+}
+
+/*.MemberEmailsI button {
+    color: white;
+    border-radius: 50%;
+    background-color: green;
+    font-size: 11px;
+    font-family: "Times New Roman";
+}*/
+
+.btn btn-outline-success{
+    top: 10%;
+}
+
+.btn btn-secondary dropdown-toggle{
+    float: right;
+}
+
+.AccountButton{
+    transform: translate(800%, 0%);
+    float: right;
+}
+
+.newPG {
+    transform: translate(380%, 0);
+    color: white;
+    float: left;
+}
+
+.PGmessage {
+    color: black;
+    font-size: 11px;
+    font: italic;
+
+}
+/*.btn_add_Fields {
+    top: 10%;
+}*/
+
+.sendInvites {
+    float: right;
+    margin-right: 35%;  
+
+}
+
+.addMoreMembers{
+    float: left;
+    height: 34px;
+    margin: 0 auto;
+    margin-left: 35%;
+
+}
+.memberEmailBox{
+    text-decoration-color: white;
+}
+
+.h2 {
+    margin: 10px 10px;
     padding: 0;
-    color:#fff;
+    color: #fff;
     font-size: 10px;
 }
-.search{
+
+
+.search {
     position: absolute;
-    
     top: 20%;
-    left :35%;
-  
-
+    left: 35%;
 }
-
-
-
-
