@@ -1,7 +1,7 @@
 ﻿body {
 }
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/money.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/money.jpg');
     
     height: 80vh;
     background-size: cover;
@@ -17,7 +17,7 @@ body {
 .form {
     position: relative;
     z-index: 1;
-    background-image: url(images/pic1.jpg);
+    background-image: url('../images/pic1.jpg');
     max-width: 360px;
     margin: 0 auto 100px;
     padding: 45px;
