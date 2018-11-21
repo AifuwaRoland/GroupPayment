@@ -1,7 +1,8 @@
-﻿body {
-}
+﻿
+
+
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/money.jpg');
+    background-color: rgb(130, 76, 175);
     
     height: 80vh;
     background-size: cover;
@@ -104,7 +105,7 @@ h2 {
     width: 1140px;
     top: 30%;
     left: 50%;
-    color: white;
+    color: rgb(19, 18, 18);
     transform: translate(-50%,-50%);
     text-align: center;
 }
@@ -175,6 +176,14 @@ h2 {
     top: 70%;
     left: 37%;
 }
+.option4 {
+    width: 20;
+    height: 20;
+    border-radius: 40%;
+    position: absolute;
+    top: 5%;
+    left: 100%;
+}
 .option3 img:hover{
     filter: brightness(50%);
 }
@@ -203,8 +212,8 @@ h2 {
 }
 .search{
     position: absolute;
-    top: 50%;
-    left :50%;
+    top: 20%;
+    left :35%;
   
 
 }
