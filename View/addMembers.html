@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 
 <head>
@@ -12,74 +12,72 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <title>Untitled Document</title>
     <link href="style2.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(e) {
-            var max_fields = 10; //maximum input boxes allowed
-            var wrapper = $(".MemberEmailsI"); //Fields wrapper
-            var btn_add = $(".btn-outline-success"); //Add button ID
+</head>
 
-            var x = 1; //initlal text box count
-            $(btn_add).click(function(e) { //on add input button click
-                e.preventDefault();
-                if (x < max_fields) { //max input box allowed
-                    x++; //text box increment
-                    $(wrapper).append('<p /><div  class="memberEmailBox"><input type="email" placeholder="Enter member email" name="myEmails[]"/><a href="#" class="remove_field" color="red"> X </a></div>'); //add input box
-                }
-            });
-
-            $(wrapper).on("click", ".remove_field", function(e) { //user click on remove text
-                e.preventDefault();
-                $(this).parent('div').remove();
-                x--;
-            })
-        });
-    </script>
+<body>
     <nav class="navbar navbar-dark bg-dark">
         <!-- Navbar content -->
-
-
-        <div class="dropdown">
-            <div class="newPG">NEW PAY GROUP</div>
-            <div class=" AccountButton">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Account
-                </a>
-            </div>
-            <div class="dropdown-menu" aria-labelledby="Welcome.html">
-                <a class="dropdown-item" href="#">Sign Out</a>
-
-
+        <div class="navbar navbar-inverse navbar-fixed-top" style="width:100%">
+            <div class="container">
+                <div class="navbar-header">
+                    <h4 style="color:white">GROUP PAY</h4>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Account<span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li style="text-align:center">Edit Profile</li>
+                        <li style="text-align:center">View Past Payments</li>
+                        <li style="text-align:center">Sign Out</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
-
-</head>
-
-<body>
-
-    <!--<div class="logo">
-        <img src="images/Gp.jpg" alt="LOGO" />
-    </div>-->
-    <div class="NPGmessage">
+    <div class="NPGmessage" >
 
         <div class=" PGmessage"><h1 color="black">PLEASE ENTER EMAIL OF GROUP MEMBERS</h1></div>
 
-        <div class="MemberEmailsI">
-            <!--<p />-->
-            <div class="memberEmailBox"><input type="email" placeholder="Enter member email" name="myEmails[]" /></div>
+        <div class="MemberEmailsI" style="padding-left:300px">
+            <div class="memberEmailBox"><input class="form-control" type="email" placeholder="Enter member email" name="myEmails[]" /></div>
         </div>
-        <p /><div class="addMoreMembers"><button type="button" class="btn btn-outline-success">Add more</button></div>
+        <div class="addMoreMembers"><button type="button" class="btn btn-outline-success">Add more</button></div>
         <div class="sendInvites"><button type="button" class="btn btn-outline-primary">Send Invites</button></div>
 
         <!--<button class="btn_add_Fields">ADD MORE</button>-->
 
     </div>
 
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 
+    <script>
+        $(document).ready(function (e) {
+            var max_fields = 10; //maximum input boxes allowed
+            var wrapper = $(".MemberEmailsI"); //Fields wrapper
+            var btn_add = $(".btn-outline-success"); //Add button ID
+
+            var x = 1; //initlal text box count
+            $(btn_add).click(function (e) { //on add input button click
+                e.preventDefault();
+                if (x < max_fields) { //max input box allowed
+                    x++; //text box increment
+                    $(wrapper).append('<p/><div class="memberEmailBox"><input class="form-control" type="email" placeholder="Enter member email" name="myEmails[]"/><a href="#" class="remove_field" color="red"> X </a></div>'); //add input box
+                }
+            });
+
+            $(wrapper).on("click", ".remove_field", function (e) { //user click on remove text
+                e.preventDefault();
+                $(this).parent('div').remove();
+                x--;
+            })
+        });
+
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown()
+        });
+    </script>
+</body>
 </html>
