@@ -30,9 +30,12 @@
                 <div class="dropdown">
                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Account<span class="caret"></span></button>
                     <ul class="dropdown-menu">
-                        <li style="text-align:center">Edit Profile</li>
+                            <button class="dropdown-item" type="button">Edit Profile</button>
+                            <button class="dropdown-item" type="button">View Past Payments</button>
+                            <button class="dropdown-item" type="button">Sign Out</button>
+                        <!-- <li style="text-align:center">Edit Profile</li> 
                         <li style="text-align:center">View Past Payments</li>
-                        <li style="text-align:center">Sign Out</li>
+                        <li style="text-align:center">Sign Out</li> -->
                     </ul>
                 </div>
             </div>
@@ -43,12 +46,12 @@
 
         <div class=" PGmessage"><h1 color="black">PLEASE ENTER EMAIL OF GROUP MEMBERS</h1></div>
 
-        <div class="MemberEmailsI" style="padding-left:300px">
-            <div class="memberEmailBox"><input class="form-control" type="email" placeholder="Enter member email" name="myEmails[]" /></div>
-        </div>
+        
         <div class="addMoreMembers"><button type="button" class="btn btn-outline-success">Add more</button></div>
         <div class="sendInvites"><button type="button" class="btn btn-outline-primary">Send Invites</button></div>
-
+        <div class="MemberEmailsI" style="padding-left:300px">
+                <div class="memberEmailBox"><input class="form-control" type="email" placeholder="Enter member email" name="myEmails[]" /></div>
+            </div>
         <!--<button class="btn_add_Fields">ADD MORE</button>-->
 
     </div>
@@ -62,7 +65,7 @@
             var max_fields = 25; //maximum input boxes allowed
             var wrapper = $(".MemberEmailsI"); //Fields wrapper
             var btn_add = $(".btn-outline-success"); //Add button ID
-            var html = '<p/><div class="memberEmailBox"><input class="form-control" type="email" placeholder="Enter member email" name="myEmails[]"/><a href="#" class="remove_field" > X </a></div>';
+            var html = '<p/><div class="memberEmailBox"><input class="form-control" type="email" placeholder="Enter member email" name="myEmails[]"/><a href="#" class="remove_field" >X</a></div>';
             var x = 1; //initlal text box count
             
             $(btn_add).click(function (e) { //on add input button click
