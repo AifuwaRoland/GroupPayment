@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -31,21 +31,36 @@
         </div>
     </nav>
 
-    <div class="welcome">
-        <h1>WELCOME TO THE GUEST MENU</h1>
-        <h2>WHERE ARE YOU PAYING TODAY?</h2>
+    <div class="container" style="text-align:center;margin-top:50px">
+        <button onclick="location.href='barsPage.html'" type="button" class="btn btn-primary" style="background-color:green">SEARCH FOR BARS NEAR YOU</button>
+    </div>
+    <br />
+    <p style="font-size:25px;text-align:center">OR</p>
+
+    <div class="container form-group" style="width:700px;margin:0 auto">
+        <label>Institution</label>
+        <input type="text" class="form-control" placeholder="e.g Mcdonalds, KFC, Superstore etc." />
+        <label>Order ID Number</label>
+        <input type="text" class="form-control" placeholder="Input Order ID" />
+        <br />
+        <label>Bill Amount</label>
+        <input type="text" class="form-control" placeholder="e.g 10.00" />
     </div>
 
-    <div class="option1">
-        <a href="restaurantSplitGroup.html"><img src="images/option1.png" class="option1"></a>
+    <div class="container" style="width:700px;margin:0 auto;margin-top:80px;margin-left:520px">
+        <div style="float:left">
+            <p style="font-size:25px">Split By:</p>
+        </div>
+        <div class="btn-group" style="padding-left:20px">
+            <button type="button" class="btn btn-primary">Percentage</button>
+            <button type="button" class="btn btn-primary">Amount</button>
+        </div>
     </div>
 
-    <div class="option2">
-        <a href="barSplitGroup.html"><img src="images/option2.jpg" class="option2"></a>
-    </div>
-
-    <div class="option3">
-        <a href="grocerySplitGroup.html"><img src="images/option3.jpg" class="option2"></a>
+    <div class="container" style="width:450px;margin:0 auto;margin-top:80px">
+        <button type="button" class="btn btn-primary" style="float:left">CREATE NEW GROUP</button>
+        <p style="float:left;font-size:25px;margin-left:12px">OR</p>
+        <button type="button" class="btn btn-primary" style="margin-left:12px">USE EXISTING GROUP</button>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -56,6 +71,4 @@
             $('.dropdown-toggle').dropdown()
         });
     </script>
-
 </body>
-</html>
