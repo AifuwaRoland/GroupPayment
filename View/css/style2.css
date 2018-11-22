@@ -99,7 +99,7 @@ h2 {
 
 .welcome {
     position: absolute;
-    width: 1140px;
+    width: 900px;
     top: 30%;
     left: 50%;
     color: rgb(19, 18, 18);
@@ -159,7 +159,7 @@ h2 {
 .option4 {
     width: 20px;
     height: 20px;
-    border-radius: 40%;
+    border-radius: 40%;</div> -->
     position: absolute;
     top: 5%;
     left: 100%;
@@ -200,6 +200,28 @@ h2 {
     color: white;
 }
 
+.Accept_Decline{
+    
+    top: 50%;
+    transform: translate(0%,40%);
+    text-align: center;
+}
+
+
+.card-body{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.btn_accept_invite{
+    padding-bottom: 20px;
+    
+}
+
+.btn_decline_invite{
+    padding-top: 20px;
+}
 /*.MemberEmailsI button {
     color: white;
     border-radius: 50%;
@@ -231,7 +253,6 @@ h2 {
     color: black;
     font-size: 11px;
     font: italic;
-
 }
 /*.btn_add_Fields {
     top: 10%;
@@ -243,6 +264,57 @@ h2 {
 
 }
 
+.billBody{
+    /* -webkit-filter: grayscale(100%); */
+}
+.bill_info{
+    background: white;
+    border-radius: 5px;
+}
+.confirmBillMessage{
+    /* border-style: groove; */
+    transform: translate(50%,20%);
+    text-align: center;
+    width: 500px;
+    /* height: 300px; */
+    z-index: -4;
+    background: darkgrey;;
+    color: white;
+    border-radius: 5px;
+    /* box-shadow: 10px 5px 5px black; */
+    
+    /* opacity: .6; */
+
+}
+
+.card{
+    width: 800px;
+    float: center;
+    left: 10%;
+    transform: translate(0, 20%);
+}
+
+.btn_accept_bill{
+    float: left;
+    transform: translate(300%,300%) ;
+    
+}
+
+.blockquote{
+    font: comic;
+}
+
+.btn_decline_bill{
+    float: right;
+    transform: translate(-300%, 300%);
+}
+
+.card_accept{
+    /* align-content: center; */
+    transform: translate(130%, 0);
+    display: block;
+}
+
 .addMoreMembers{
     float: left;
     height: 34px;
@@ -252,6 +324,10 @@ h2 {
 }
 .memberEmailBox{
     text-decoration-color: white;
+}
+
+.removeField{
+    color: red;
 }
 
 .h2 {
@@ -266,4 +342,24 @@ h2 {
     position: absolute;
     top: 20%;
     left: 35%;
+}
+
+.h5{
+    color: green;
+    outline: #4CAF50;
+    outline-style: dashed;
+    outline-width: 2px;
+}
+
+.alert-success{
+    transform: translate(0%, -30%);
+    width: 800px;
+}
+
+.logoOnNavBar{
+    border-radius: 50px;
+    background: white;
+    width: 50px;
+    height: 50px;
+    transform: translate(-590%,0);
 }
