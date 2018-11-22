@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <div class="navbar navbar-inverse navbar-fixed-top" style="width:100%">
+            <div class="container">
+                <div class="navbar-header">
+                    <h4 style="color:white">GROUP PAY</h4>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Account<span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li style="text-align:center">Edit Profile</li>
+                        <li style="text-align:center">View Past Payments</li>
+                        <li style="text-align:center">Sign Out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="text-align:center;margin-top:50px">
+        <h4>GROUP PAYMENT SPLIT FOR STARBUCKS</h4>
+    </div>
+    <br />
+    <div class="container form-group" style="width:700px;margin:0 auto">
+        <label>Order ID Number</label>
+        <input type="text" class="form-control" placeholder="Input Order ID" />
+        <br />
+        <label>Bill Amount</label>
+        <input type="text" class="form-control" placeholder="e.g 10.00" />
+    </div>
+
+    <div class="container" style="width:700px;margin:0 auto;margin-top:80px;margin-left:520px">
+        <div style="float:left">
+            <p style="font-size:25px">Split By:</p>
+        </div>
+        <div class="btn-group" style="padding-left:20px">
+            <button type="button" class="btn btn-primary">Percentage</button>
+            <button type="button" class="btn btn-primary">Amount</button>
+        </div>
+    </div>
+
+    <div class="container" style="width:450px;margin:0 auto;margin-top:80px">
+        <button type="button" class="btn btn-primary" style="float:left">CREATE NEW GROUP</button>
+        <p style="float:left;font-size:25px;margin-left:12px">OR</p>
+        <button type="button" class="btn btn-primary" style="margin-left:12px">USE EXISTING GROUP</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown()
+        });
+    </script>
+</body>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -10,6 +10,79 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <div class="navbar navbar-inverse navbar-fixed-top" style="width:100%">
+            <div class="container">
+                <div class="navbar-header">
+                    <h4 style="color:white">GROUP PAY</h4>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Account<span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li style="text-align:center">Edit Profile</li>
+                        <li style="text-align:center">View Past Payments</li>
+                        <li style="text-align:center">Sign Out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="constainer">
+        <input type="text" class="form-control" placeholder="Search for a Restaurant" style="float:left;width:94.5%" />
+        <button class="btn btn-success" style="float:right">Search</button>
+    </div>
+
+    <div class="container">
+        <h4 style="text-align:center;margin-top:50px">RESTAURANTS NEAR YOUR LOCATION</h4>
+    </div>
+
+    <div class="container">
+        <img src="images/ummap.png" width="700" height="460" style="margin-left:auto;margin-right:auto;display:block" />
+    </div>
+
+    <br />
+
+    <div class="constainer" style="width:700px;margin:0 auto" onclick="location.href='splitSubwayGroup.html'">
+        <div style="float:left;padding-top:20px">
+            <a><img src="images/subway.jpg" width="180" height="60" /></a>
+        </div>
+        <div class="address hours" style="text-align:left;text-indent:30px;float:right">
+            <h5>SUBWAY</h5>
+            <p><strong>Address</strong> 248L University Center Campo Café, Winnipeg, MB R3T 2N2</p>
+            <p><strong>Hours</strong> Mon - Fri: 8am - 8pm, Sat: 11am - 7pm, Sun: Closed</p>
+        </div>
+    </div>
+
+    <div class="constainer" style="width:700px;margin:0 auto" onclick="location.href='splitTimHortonsGroup.html'">
+        <div style="float:left;padding-top:10px">
+            <a><img src="images/tims.jpg" width="180" height="150" /></a>
+        </div>
+        <div class="address hours" style="text-align:left;text-indent:30px;float:left">
+            <h5>TIM HORTONS</h5>
+            <p><strong>Address</strong> 65 Chancellors Cir, Winnipeg, MB R3T 2N2</p>
+            <p><strong>Hours</strong> Mon - Fri: 8am - 8pm, Sat: 11am - 7pm, Sun: Closed</p>
+        </div>
+    </div>
+
+    <div class="constainer" style="width:700px;margin:0 auto;padding-top:240px" onclick="location.href='splitDegreesGroup.html'">
+        <div style="float:left;padding-left:50px">
+            <a><img src="images/degrees.jpg" width="80" height="80" /></a>
+        </div>
+        <div class="address hours" style="text-align:left;text-indent:80px;float:left">
+            <h5>DEGREES</h5>
+            <p><strong>Address</strong> 65 Chancellors Cir, Winnipeg, MB R3T 2N2</p>
+            <p><strong>Hours</strong> Mon - Fri: 8am - 8pm, Sat: 11am - 7pm, Sun: Closed</p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+=======
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
     <script>
@@ -73,4 +146,5 @@
                 </form>
             </div>
 
-</body>
+
+  
