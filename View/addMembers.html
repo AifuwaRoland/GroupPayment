@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Untitled Document</title>
     <link href="style2.css" rel="stylesheet" type="text/css">
+    <script src="functions.js"></script>
 </head>
 
 <body>
@@ -25,30 +26,29 @@
                             <h4 style="color:white">GROUP PAY</h4>
                         </div>
                         <div class="logoOnNavBar">
-                                <img src="/home/aifuwa/Desktop/GroupPayment/View/images/logo.jpg" />
+                                <img src="images/GP.jpg" />
                             </div>
                         <div class="dropdown">
                             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Account<span class="caret"></span></button>
                             <ul class="dropdown-menu">
-                                    <button class="dropdown-item" type="button" onclick="location.href='previousPaygroup.html'">View Past Payments</button>
-                                    <button class="dropdown-item" type="button">Sign Out</button>
+                                 <button class="dropdown-item" type="button" onclick="location.href='previousPaygroup.html'">View Past Payments</button>
+                                 <button class="dropdown-item" type="button" onclick="location.href='index.html'">Sign Out</button>
                             </ul>
                         </div>
                     </div>
                 </div>
             </nav>
 
-    <form ><div class="NPGmessage" >
+    <form ><div class="NPGmessage">
 
         <div class=" PGmessage"><h1 color="black">PLEASE ENTER EMAIL OF GROUP MEMBERS</h1></div>
 
-        
+
         <div class="addMoreMembers"><button type="button" class="btn btn-outline-success">Add more</button></div>
-        <div class="sendInvites" ><button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#SwitchMemberPage">Send Invites</button></div>
+        <div class="sendInvites" ><button class="btn btn-primary" data-toggle="modal" data-target="#SwitchMemberPage">Send Invites</button></div>
         <div class="MemberEmailsI" style="padding-left:300px">
-                <div class="memberEmailBox" style="color: black;"><input class="form-control" placeholder="Enter member email" name="myEmails[]" required/></div>
+                <div class="memberEmailBox" style="color: black;"><input style="color: black;" class="form-control" placeholder="Enter member email" name="myEmails[]"/></div>
             </div>
-        <!--<button class="btn_add_Fields">ADD MORE</button>-->
 
     </div></form>
 
@@ -81,7 +81,7 @@
             var max_fields = 25; //maximum input boxes allowed
             var wrapper = $(".MemberEmailsI"); //Fields wrapper
             var btn_add = $(".btn-outline-success"); //Add button ID
-            var html = '<p/><div class="memberEmailBox"><input class="form-control" type="email" placeholder="Enter member email" name="myEmails[]" required/><a href="#" class="remove_field" >X</a></div>';
+            var html = '<p/><div class="memberEmailBox"><input class="form-control" type="email" placeholder="Enter member email" name="myEmails[]" /><a href="#" class="remove_field" >X</a></div>';
             var x = 1; //initlal text box count
             
             $(btn_add).click(function (e) { //on add input button click

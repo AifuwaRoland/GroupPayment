@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Group Payment </title>
+<link rel="stylesheet" href="css/style2.css">
+<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="css/bootstrap-grid.css">
+<link rel="stylesheet" href="css/bootstrap-reboot.css">
+<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<script src="functions.js"></script>
+
+</head>
+
+
+<body style="background-image:url(images/pic2.jpg)">
+
+
+
+
+        <div class="login-page">
+        </div>
+    <div class="login-box">
+            <img src="images/Gp.jpg" class="avatar">
+            <h1>Welcome To GroupPayment</h1>
+    </div> 
+
+    <div class="form">
+        <form name="myForm" action="Welcome.html" onsubmit="return checkUserInfo()" class="register-form" method="POST">
+
+            <input type="text" name="username" placeholder="user name" required />
+            <input type="password" name="password" placeholder="password" required />
+
+            <input type="submit" style="background:green; color:white;" value="Submit">
+            <button onclick="location.href='guest.html'" type="button">
+                Sign as Guest
+            </button>
+        </form>
+
+
+
+        <p class="message">
+            Not Registered? <a href="#" style="color: blue;">Sign up</a>
+
+        </p>
+        <form name="signUp-Form" onsubmit="return signUpProcedure()" action: method="POST" SignUp-form">
+            <input type="text" name="signupUsername" placeholder="user name" required />
+            <input type="text" name="signupPassword" placeholder="password" required />
+            <input type="text" name="signupEmail" placeholder="email" required />
+            <input style="background: green; color: white;" type="submit" value="Sign Up">
+            <!--<p class="message"> Registered? <a href="Welcome.html">Login</a> OR <a href="guest.html"> Login As Guest</a>
+
+        -->
+        </form>
+    </div>
+<script src=' https://code.jquery.com/jquery-3.2.1.min.js'>
+</script>
+<script >
+ $('.message a').click(function(){
+     $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+ });
+</script>
+</body>
+</html> 

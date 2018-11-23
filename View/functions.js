@@ -1,20 +1,7 @@
 
 
-    var username = "Mikey1";
-    var password = "K1ngdom1";
-
-     
-    var userNames = [];
-    var passWords = [];
-    var Emails = [];
-    var userCount = 0;
-    var fromSignup = false;
-
-    // alert(fromSignup);
-    if(fromSignup == true){
-        alert("Sign in with newly made Credentials to gain access!");
-        fromSignup = false;
-    }
+    var username = "Group40";
+    var password = "1234";
     
     function checkUserInfo(){
 
@@ -52,37 +39,19 @@
         return true;
     }
 
-    function userSearch( username ) {
-
-        var result = -1;
-
-        for( i =0; i<userCount; i++ ){
-            if( userNames[i] == username ){
-                result = i;
-                break;
-            }
-        }
-        return result;
-    }
-
-    function validateUserInfo( index ){
-
-        var usrnm = document.forms["myForm"]["username"].value;
-        var pswrd = document.forms["myForm"]["password"].value;
 
 
-        if( pswrd != passWords[index] ){
-            alert(" Invalid Password for username "+usrnm);
-            return false;
-        }
-        else{
-            alert(" valid credentials, logginf in...");
-            return true;
-        }
-    }
 function signOutProcedure(){
     
 }
+
+function payNow(){
+
+alert("Payment successfull!s");
+location.href="Welcome.html"
+
+}
+
 
 function validateSplitPageNG(){
     
@@ -116,5 +85,18 @@ function validateSplitPageEG(){
 
 }
 
+function declineInvitation(){
+    alert("Invitation declined!");
+    location.href="index.html";
+}
+
+function declineBill(){
+    alert("Bill declined! you will not be charged for this");
+    location.href="index.html";
+}
 
 
+function quickSignUp(){
+    alert("sign up successful! continue to payment page.");
+    location.href="PaymentMthodSetup.html";
+}

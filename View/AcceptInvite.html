@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+    <script src="functions.js"></script>
     <script>
         $(document).ready(function () {
                 $('.dropdown-toggle').dropdown()
@@ -21,6 +22,7 @@
 </head>
 <body>
    
+
         <nav class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
                 <div class="navbar navbar-inverse navbar-fixed-top" style="width:100%">
@@ -29,24 +31,26 @@
                             <h4 style="color:white">GROUP PAY</h4>
                         </div>
                         <div class="logoOnNavBar">
-                                <img src="/home/aifuwa/Desktop/GroupPayment/View/images/logo.jpg" />
+                                <img src="images/Gp.jpg" />
                             </div>
                         <div class="dropdown">
                             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Account<span class="caret"></span></button>
                             <ul class="dropdown-menu">
-                                    <button class="dropdown-item" type="button" onclick="location.href='previousPaygroup.html'">View Past Payments</button>
-                                    <button class="dropdown-item" type="button">Sign Out</button>
+                                <button class="dropdown-item" type="button" onclick="location.href='previousPaygroup.html'">View Past Payments</button>
+                                <button class="dropdown-item" type="button" onclick="location.href='index.html'">Sign Out</button>
+
                             </ul>
                         </div>
                     </div>
+
                 </div>
-            </nav>
+            </div>
+        </div>
+    </nav>
         
 
     <div class="Accept_Decline">
-            <!-- <div class="inviteMessage">
-                    <h5>You have been Invited to join group X on group pay</h5>
-                </div> -->
+
                 <center><div class="alert alert-success" role="alert">
                         <h4 class="alert-heading">Invitation Alert!</h4>
                         <p>You have been invited to join pay group X on group Pay.
@@ -54,9 +58,9 @@
                         <hr>
                         <p class="mb-0">Please respond with one of the following options</p>
                       </div></center>
-            <center><div class="btn_accept_invite"><button type="button" class="btn btn-success">Accept Invitation</button></div></center>
+            <center><div class="btn_accept_invite"><button type="button"  onclick="location.href='AcceptBill.html'"  class="btn btn-success">Accept Invitation</button></div></center>
             NOT YOU? THAT'S OKAY
-            <center><div class="btn_decline_invite"><button type="button" class="btn btn-danger">Decline Invitation</button></div></center>
+            <center><div class="btn_decline_invite"><button type="button"  onclick="declineInvitation()"  class="btn btn-danger">Decline Invitation</button></div></center>
     </div>
 </body>
 </html>

@@ -13,6 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
     <script>
+        alert("Sign up successful! continue to payment method.")
         $(document).ready(function () {
                 $('.dropdown-toggle').dropdown()
             });
@@ -28,13 +29,13 @@
                             <h4 style="color:white">GROUP PAY</h4>
                         </div>
                         <div class="logoOnNavBar">
-                                <img src="/home/aifuwa/Desktop/GroupPayment/View/images/logo.jpg" />
+                                <img src="images/Gp.jpg" />
                             </div>
                         <div class="dropdown">
                             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Account<span class="caret"></span></button>
                             <ul class="dropdown-menu">
-                                    <button class="dropdown-item" type="button" onclick="location.href='previousPaygroup.html'">View Past Payments</button>
-                                    <button class="dropdown-item" type="button">Sign Out</button>
+                                <button class="dropdown-item" type="button" onclick="location.href='previousPaygroup.html'">View Past Payments</button>
+                                <button class="dropdown-item" type="button" onclick="location.href='index.html'">Sign Out</button>
                             </ul>
                         </div>
                     </div>
@@ -48,7 +49,7 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Complete sign up</h5>
                                   <p class="card-text">Complete sign up by setting up a payment method</p>
-                                  <a href="#" class="btn btn-primary">Set up Payment method</a>
+                                  <a href="paymentMethod.html" class="btn btn-primary">Set up Payment method</a>
                                 </div>
                               </div>
                               
@@ -56,7 +57,7 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Note..</h5>
                                   <p class="card-text">Skipping  this step will prompt you to pick a method of payment however, this information will NOT be saved by the system!</p>
-                                  <a href="#" class="btn btn-primary">Skip</a>
+                                  <a href="paymentMethod.html" class="btn btn-primary">Skip</a>
                                 </div>
                               </div>
                 </div>
