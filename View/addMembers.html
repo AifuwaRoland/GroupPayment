@@ -17,41 +17,60 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <!-- Navbar content -->
-        <div class="navbar navbar-inverse navbar-fixed-top" style="width:100%">
-            <div class="container">
-                <div class="navbar-header">
-                    <h4 style="color:white">GROUP PAY</h4>
-                </div>
-                <div class="logoOnNavBar">
-                        <img src="/home/aifuwa/Desktop/GroupPayment/View/images/logo.jpg" />
+        <nav class="navbar navbar-dark bg-dark">
+                <!-- Navbar content -->
+                <div class="navbar navbar-inverse navbar-fixed-top" style="width:100%">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <h4 style="color:white">GROUP PAY</h4>
+                        </div>
+                        <div class="logoOnNavBar">
+                                <img src="/home/aifuwa/Desktop/GroupPayment/View/images/logo.jpg" />
+                            </div>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Account<span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                    <button class="dropdown-item" type="button" onclick="location.href='previousPaygroup.html'">View Past Payments</button>
+                                    <button class="dropdown-item" type="button">Sign Out</button>
+                            </ul>
+                        </div>
                     </div>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Account<span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li style="text-align:center">Edit Profile</li>
-                        <li style="text-align:center">View Past Payments</li>
-                        <li style="text-align:center">Sign Out</li>
-                    </ul>
                 </div>
-            </div>
-        </div>
-    </nav>
+            </nav>
 
-    <div class="NPGmessage" >
+    <form ><div class="NPGmessage" >
 
         <div class=" PGmessage"><h1 color="black">PLEASE ENTER EMAIL OF GROUP MEMBERS</h1></div>
 
-        <div class="MemberEmailsI" style="padding-left:300px">
-            <div class="memberEmailBox"><input class="form-control" type="email" placeholder="Enter member email" name="myEmails[]" /></div>
-        </div>
+        
         <div class="addMoreMembers"><button type="button" class="btn btn-outline-success">Add more</button></div>
-        <div class="sendInvites"><button type="button" class="btn btn-outline-primary">Send Invites</button></div>
-
+        <div class="sendInvites" ><button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#SwitchMemberPage">Send Invites</button></div>
+        <div class="MemberEmailsI" style="padding-left:300px">
+                <div class="memberEmailBox" style="color: black;"><input class="form-control" placeholder="Enter member email" name="myEmails[]" required/></div>
+            </div>
         <!--<button class="btn_add_Fields">ADD MORE</button>-->
 
-    </div>
+    </div></form>
+
+    <div class="modal fade" id="SwitchMemberPage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Group Members</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Switching to an invited members view to show complete sequence
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" onclick="location.href='AcceptInvite.html'" class="btn btn-primary">Okay switch</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
@@ -62,7 +81,7 @@
             var max_fields = 25; //maximum input boxes allowed
             var wrapper = $(".MemberEmailsI"); //Fields wrapper
             var btn_add = $(".btn-outline-success"); //Add button ID
-            var html = '<p/><div class="memberEmailBox"><input class="form-control" type="email" placeholder="Enter member email" name="myEmails[]"/><a href="#" class="remove_field" > X </a></div>';
+            var html = '<p/><div class="memberEmailBox"><input class="form-control" type="email" placeholder="Enter member email" name="myEmails[]" required/><a href="#" class="remove_field" >X</a></div>';
             var x = 1; //initlal text box count
             
             $(btn_add).click(function (e) { //on add input button click
