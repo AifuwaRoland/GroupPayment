@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <div class="navbar navbar-inverse navbar-fixed-top" style="width:100%">
+            <div class="container">
+                <div class="navbar-header">
+                    <h4 style="color:white">GROUP PAY</h4>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Account<span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li style="text-align:center">Edit Profile</li>
+                        <li style="text-align:center">View Past Payments</li>
+                        <li style="text-align:center">Sign Out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="text-align:center;margin-top:100px">
+        <h3>SELECT PAYMENT METHOD</h3>
+    </div>
+
+    <div class="container" style="text-align:center;margin-top:50px">
+        <a href="https://www.paypal.com"><img src="images/paypal.png" height="80" width="272" /></a>
+    </div>
+    <div class="container" style="text-align:center;margin-top:50px">
+        <a href="creditPayment.html"><img src="images/card.png" height="80" width="108" /></a>
+    </div>
+    <div class="container" style="text-align:center;margin-top:50px"> 
+        <a href="https://www.interac.ca/en/online-merchant-locator.html"><img src="images/interac.png" width="200" height="80" /></a>
+    </div>
+
+    <div class="container" style="text-align:center;margin-top:50px">
+        <button class="btn btn-success btn-primary">Use My E-Wallet</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown()
+        });
+    </script>
+</body>
+</html>

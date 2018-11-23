@@ -10,21 +10,16 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.bundle.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown()
+        });
     </script>
-    <script src="js/bootstrap.bundle.js">
-    </script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-     <script>
-         $(document).ready(function () {
-                 $('.dropdown-toggle').dropdown()
-             });
-     </script>
-    
-
 </head>
 <body>
+
         <nav class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
                 <div class="navbar navbar-inverse navbar-fixed-top" style="width:100%">
@@ -43,42 +38,39 @@
                             </ul>
                         </div>
                     </div>
+
                 </div>
-            </nav>
-        
-       
+            </div>
+        </div>
+    </nav>
+
+
     <div class="welcome">
         <h1>
-            WELCOME TO THE ACCOUNT MENU
+            WELCOME TO THE GUEST MENU
         </h1>
         <h2>
             WHERE ARE YOU PAYING TODAY?
         </h2>
     </div>
-    
     <div class="option1">
-            <a href="restaurantsPage.html">
-        <img src="images/option1.png" class="option1">
-        <p class="img-text">
-         <!-- write names -->
-             
-        </p>
-           
-        </div>
 
-     </h1>
+        <a href="restaurantSplitGroup.html"><img src="images/option1.png" class="option1"></a>
+        <p class="img-text">
+
+
+        </p>
+
     </div>
     <div class="option2">
+
             <a href="barsPage.html">
         <img src="images/option2.jpg" class="option2">
     </div>
     <div class="option3">
             <a href="groceryPage.html">
         <img src="images/option3.jpg" class="option2">
+
     </div>
-    
-
-    
-
 </body>
 </html>

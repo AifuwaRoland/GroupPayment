@@ -1,4 +1,6 @@
+
 <!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="utf-8" />
@@ -10,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <script src="functions.js"></script>
 </head>
 <body>
@@ -41,10 +44,12 @@
     <br />
     <div class="container form-group" style="width:700px;margin:0 auto">
         <label>Order ID Number</label>
+
         <input type="text" id="input_orderID" class="form-control" placeholder="Input Order ID" required/>
         <br />
         <label>Bill Amount</label>
         <input type="text" id="input_billAmt" class="form-control" placeholder="e.g 10.00" required/>
+
     </div>
 
     <div class="container" style="width:700px;margin:0 auto;margin-top:80px;margin-left:520px">
@@ -52,15 +57,19 @@
             <p style="font-size:25px">Split By:</p>
         </div>
         <div class="btn-group" style="padding-left:20px">
+
             <button type="button" id="btn_percentage" class="btn btn-primary">Percentage</button>
             <button type="button" id="btn_amount" class="btn btn-primary">Amount</button>
+
         </div>
     </div>
 
     <div class="container" style="width:450px;margin:0 auto;margin-top:80px">
+
         <button  id="btn_createNG" class="btn btn-primary" onClick='location.href="addMembers.html"' type="submit" style="float:left">CREATE NEW GROUP</button>
         <p style="float:left;font-size:25px;margin-left:12px">OR</p>
         <button  id="btn_Existing" class="btn btn-primary" onClick='location.href="previousPaygroup.html"' type="submit" style="margin-left:12px">USE EXISTING GROUP</button>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -72,3 +81,5 @@
         });
     </script>
 </body>
+
+
