@@ -21,38 +21,37 @@
 </head>
 <body>
    
-    <nav class="navbar navbar-dark bg-dark">
-            <!-- Navbar content -->
-            <div class="navbar navbar-inverse navbar-fixed-top" style="width:100%">
-                <div class="container">
-                    <div class="navbar-header">
-                        <h4 style="color:white">GROUP PAY</h4>
-                    </div>
-                    <div class="logoOnNavBar">
-                            <img src="/home/aifuwa/Desktop/GroupPayment/View/images/logo.jpg" />
+        <nav class="navbar navbar-dark bg-dark">
+                <!-- Navbar content -->
+                <div class="navbar navbar-inverse navbar-fixed-top" style="width:100%">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <h4 style="color:white">GROUP PAY</h4>
                         </div>
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Account<span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <button class="dropdown-item" type="button">View Past Payments</button>
-                            <button class="dropdown-item" type="button">Sign Out</button>
-                            <!-- <li style="text-align:center">Edit Profile</li>
-                            <li style="text-align:center">View Past Payments</li>
-                            <li style="text-align:center">Sign Out</li> -->
-                        </ul>
+                        <div class="logoOnNavBar">
+                                <img src="/home/aifuwa/Desktop/GroupPayment/View/images/logo.jpg" />
+                            </div>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Account<span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                    <button class="dropdown-item" type="button" onclick="location.href='previousPaygroup.html'">View Past Payments</button>
+                                    <button class="dropdown-item" type="button">Sign Out</button>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+
+
         <div class="prevPG">
         <div class="card" style="width: 50rem;">
                 <div class="card-header">
                   Previous Pay Groups
                 </div>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">23/ 09/ 2018    Earl's<div class="btn_ViewPG"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">View Group Memebers</button></div></li>
-                  <li class="list-group-item">19/ 09/ 2018    McDonalds<div class="btn_ViewPG"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">View Group Memebers</button></div></li>
-                  <li class="list-group-item">10/ 08/ 2018    Clay Oven<div class="btn_ViewPG"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">View Group Memebers</button></div></li>
+                  <li class="list-group-item">23/ 09/ 2018   McDonalds<div class="btn_ViewPG"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal_Mcdonalds">View Group Memebers</button></div></li>
+                  <li class="list-group-item">19/ 09/ 2018     Earl's<div class="btn_ViewPG"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal_Earls">View Group Memebers</button></div></li>
+                  <li class="list-group-item">10/ 08/ 2018    Clay Oven<div class="btn_ViewPG"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal_ClayOven">View Group Memebers</button></div></li>
                 </ul>
               </div>
             </div>
@@ -60,7 +59,7 @@
 
 
         <!--McDonalds -->
-        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal fade" id="Modal_Mcdonalds" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -85,11 +84,11 @@
 
               <!--Earl's -->
 
-        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal fade" id="Modal_Earls" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                      <h5 class="modal-title" id="exampleModalLongTitle">Group Members</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
@@ -108,11 +107,11 @@
               </div>
               <!--Clay Oven -->
 
-        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal fade" id="Modal_ClayOven" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                      <h5 class="modal-title" id="exampleModalLongTitle">Group Members</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
@@ -121,6 +120,7 @@
                             <li>Harrison wells --  Harri895@gmail.com</li>
                             <li>Emmanuel Duke -- Emma219@outlook.com</li>
                             <li>Tunde Hy -- adekunleT@ymail.com</li>
+                            <li>Hssasdsaddadasdasda Hy -- adekunleT@ymail.com</li>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

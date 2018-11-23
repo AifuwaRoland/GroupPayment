@@ -10,7 +10,7 @@
     var userCount = 0;
     var fromSignup = false;
 
-    alert(fromSignup);
+    // alert(fromSignup);
     if(fromSignup == true){
         alert("Sign in with newly made Credentials to gain access!");
         fromSignup = false;
@@ -20,15 +20,20 @@
 
         var usrnm = document.forms["myForm"]["username"].value;
         var pswrd = document.forms["myForm"]["password"].value;
-        var index = userSearch(usrnm);
+        // var index = userSearch(usrnm);
         
-        if( index == -1 ){
+        if( username != usrnm ){
             alert("not a valid username")
             return false;
         }
 
-        else{
-           return validateUserInfo( index );
+        if( username == usrnm && pswrd != password ){
+            alert("Invalid password for username "+ usrnm );
+            return false;
+        }
+        if( username == username && password == pswrd ){
+           alert(" Loggin in...");
+            return true;
         }
         
     }
@@ -75,3 +80,41 @@
             return true;
         }
     }
+function signOutProcedure(){
+    
+}
+
+function validateSplitPageNG(){
+    
+    var orderId = document.getElementById("input_orderID").value;
+    var billAmt = document.getElementById("input_billAmt").value;
+    var btn_createNG = document.getElementById("btn_CreateNG").value;
+    var btn_existing = document.getElementById("btn_Existing").value;
+
+    if(document.getElementById("input_orderID").value != "" && document.getElementById("input_billAmt").value != "" ){
+        location.href="addMembers.html";
+    }
+    else{
+        alert("Both Order ID and Bill Amounts are required.");
+    }
+
+}
+
+function validateSplitPageEG(){
+    var orderId = document.getElementById("input_orderID").value;
+    var billAmt = document.getElementById("input_billAmt").value;
+    var btn_createNG = document.getElementById("btn_CreateNG").value;
+    var btn_existing = document.getElementById("btn_Existing").value;
+    alert(orderId+" order id "+ billAmt+" bill amount");
+
+    if(orderId != "" && billAmt != "" ){
+        location.href="previousPayGroup.html.html";
+    }
+    else{
+        alert("Both Order ID and Bill Amounts are required.");
+    }
+
+}
+
+
+

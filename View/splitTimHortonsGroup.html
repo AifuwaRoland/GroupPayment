@@ -10,17 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-    <script>
-        $(document).ready(function () {
-                $('.dropdown-toggle').dropdown()
-            });
-    </script>
-
 </head>
 <body>
-   
         <nav class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
                 <div class="navbar navbar-inverse navbar-fixed-top" style="width:100%">
@@ -41,21 +32,41 @@
                     </div>
                 </div>
             </nav>
-        
 
-    <div class="Accept_Decline">
-            <!-- <div class="inviteMessage">
-                    <h5>You have been Invited to join group X on group pay</h5>
-                </div> -->
-                <center><div class="alert alert-success" role="alert">
-                        <h4 class="alert-heading">Invitation Alert!</h4>
-                        <p>You have been invited to join pay group X on group Pay.
-                        </p>
-                        <hr>
-                        <p class="mb-0">Please respond with one of the following options</p>
-                      </div></center>
-            <center><div class="btn_accept_invite"><button type="button" class="btn btn-success">Accept Invitation</button></div></center>
-            NOT YOU? THAT'S OKAY
-            <center><div class="btn_decline_invite"><button type="button" class="btn btn-danger">Decline Invitation</button></div></center>
+    <div class="container" style="text-align:center;margin-top:50px">
+        <h4>GROUP PAYMENT SPLIT FOR TIM HORTONS</h4>
     </div>
+    <br />
+    <div class="container form-group" style="width:700px;margin:0 auto">
+        <label>Order ID Number</label>
+        <input type="text" class="form-control" placeholder="Input Order ID" />
+        <br />
+        <label>Bill Amount</label>
+        <input type="text" class="form-control" placeholder="e.g 10.00" />
+    </div>
+
+    <div class="container" style="width:700px;margin:0 auto;margin-top:80px;margin-left:520px">
+        <div style="float:left">
+            <p style="font-size:25px">Split By:</p>
+        </div>
+        <div class="btn-group" style="padding-left:20px">
+            <button type="button" class="btn btn-primary">Percentage</button>
+            <button type="button" class="btn btn-primary">Amount</button>
+        </div>
+    </div>
+
+    <div class="container" style="width:450px;margin:0 auto;margin-top:80px">
+            <button  id="btn_createNG" class="btn btn-primary" onClick='location.href="addMembers.html"' type="submit" style="float:left">CREATE NEW GROUP</button>
+            <p style="float:left;font-size:25px;margin-left:12px">OR</p>
+            <button  id="btn_Existing" class="btn btn-primary" onClick='location.href="previousPaygroup.html"' type="submit" style="margin-left:12px">USE EXISTING GROUP</button>
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown()
+        });
+    </script>
 </body>

@@ -10,16 +10,9 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-<script>
-     $(document).ready(function () {
-            $('.dropdown-toggle').dropdown()
-        });
-</script>
+    <script src="functions.js"></script>
 </head>
 <body>
-
         <nav class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
                 <div class="navbar navbar-inverse navbar-fixed-top" style="width:100%">
@@ -42,37 +35,40 @@
             </nav>
         
 
-    <div class="welcome">
-        <h1>
-            WELCOME TO THE GUEST MENU
-        </h1>
-        <h2>
-            WHERE ARE YOU PAYING TODAY?
-        </h2>
+    <div class="container" style="text-align:center;margin-top:50px">
+        <h4>GROUP PAYMENT SPLIT FOR SUBWAY</h4>
     </div>
-    <div class="option1">
-            <a href="clickable">
-        <img src="images/option1.png" class="option1">
-        <p class="img-text">
-        
-             
-        </p>
-           
+    <br />
+    <div class="container form-group" style="width:700px;margin:0 auto">
+        <label>Order ID Number</label>
+        <input type="text" id="input_orderID" class="form-control" placeholder="Input Order ID" required/>
+        <br />
+        <label>Bill Amount</label>
+        <input type="text" id="input_billAmt" class="form-control" placeholder="e.g 10.00" required/>
+    </div>
+
+    <div class="container" style="width:700px;margin:0 auto;margin-top:80px;margin-left:520px">
+        <div style="float:left">
+            <p style="font-size:25px">Split By:</p>
         </div>
-
-     </h1>
+        <div class="btn-group" style="padding-left:20px">
+            <button type="button" id="btn_percentage" class="btn btn-primary">Percentage</button>
+            <button type="button" id="btn_amount" class="btn btn-primary">Amount</button>
+        </div>
     </div>
-    <div class="option2">
-            <a href="clickable">
-        <img src="images/option2.jpg" class="option2">
-    </div>
-    <div class="option3">
-            <a href="clickable">
-        <img src="images/option3.jpg" class="option2">
-    </div>
-    
 
-    
+    <div class="container" style="width:450px;margin:0 auto;margin-top:80px">
+        <button  id="btn_createNG" class="btn btn-primary" onClick='location.href="addMembers.html"' type="submit" style="float:left">CREATE NEW GROUP</button>
+        <p style="float:left;font-size:25px;margin-left:12px">OR</p>
+        <button  id="btn_Existing" class="btn btn-primary" onClick='location.href="previousPaygroup.html"' type="submit" style="margin-left:12px">USE EXISTING GROUP</button>
+    </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown()
+        });
+    </script>
 </body>
-</html>
